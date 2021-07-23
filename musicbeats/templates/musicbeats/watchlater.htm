@@ -3,16 +3,16 @@
 
 {% block body %}
 {% load static %}
-<h1 class="text-center mt-5">Watch Later</h1>
+<h1 class="text-center mt-5"  data-aos="zoom-in" data-aos-delay="600">Watch Later</h1>
 
-{% if song|length < 1 %} <h3 style="text-align: center; padding-top: 5%;">You have no Video in your Watch Later</h3>
+{% if song|length < 1 %} <h3 style="text-align: center; padding-top: 5%; "  data-aos="zoom-in" data-aos-delay="600">You have no Video in your Watch Later</h3>
   {% endif %}
 
   <div class="container">
     <div class="row justify-content-center mt-5">
       {% for i in song reversed %}
       <div class="col-11 col-md-4 mb-3">
-        <div class="card mb-3">
+        <div class="card mb-3"  data-aos="zoom-out" data-aos-delay="700">
           <div>
             <img src="{{i.image}}" class="card-img" alt="...">
           </div>

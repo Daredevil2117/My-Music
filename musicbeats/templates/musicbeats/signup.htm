@@ -3,9 +3,9 @@
 
 {% block body %}
 
-<h2 class="text-center mt-3">Sign-Up</h2>
+<h2 class="text-center mt-3"  data-aos="flip-down" data-aos-delay="600">Sign-Up</h2>
 <div class="container my-3">
-    <form method="POST" action="/musicbeats/signup">{% csrf_token %}
+    <form method="POST" action="/musicbeats/signup"  data-aos="flip-up" data-aos-delay="700">{% csrf_token %}
         <div class="form-group">
           <label for="exampleFormControlInput1">Email address</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">

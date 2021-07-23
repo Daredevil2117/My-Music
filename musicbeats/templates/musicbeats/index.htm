@@ -6,11 +6,11 @@
 
 <!-- ################################ CARDS ##################################################### -->
 <div class="container">
-  <h2>Trending Songs</h2>
+  <h2  data-aos="zoom-out" data-aos-delay="600">Trending Songs</h2>
   <div class="row mt-3 justify-content-center">
     {% for i in song %}
     <div class="col-11 col-md-4 mb-3">
-      <div class="card">
+      <div class="card" data-aos="zoom-in" data-aos-delay="700">
         <img src="{{i.image}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{i.name}}</h5>
@@ -24,11 +24,11 @@
   </div>
 
 
-  <h2>Your Watch Later</h2>
+  <h2  data-aos="fade-down" data-aos-delay="600">Your Watch Later</h2>
   <div class="row mt-3 justify-content-center">
     {% for i in watch reversed %}
     <div class="col-11 col-md-4 mb-3">
-      <div class="card">
+      <div class="card"  data-aos="fade-up" data-aos-delay="700">
         <img src="{{i.image}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{i.name}}</h5>

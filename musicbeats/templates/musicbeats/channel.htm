@@ -3,13 +3,13 @@
 
 {% block body %}
 
-<h2 class="mt-4 text-center">Channel: {{channel.name}}</h2>
+<h2 class="mt-4 text-center"  data-aos="zoom-in-out" data-aos-delay="600">Channel: {{channel.name}}</h2>
 
 <div class="container">
   <div class="row justify-content-center mt-4">
     {% for i in song reversed %}
     <div class="col-11 col-md-4 mb-3">
-      <div class="card mb-3"">
+      <div class="card mb-3"  data-aos="zoom-in-up" data-aos-delay="700">
       <div>
         <img src=" {{i.image}}" class="card-img" alt="...">
       </div>

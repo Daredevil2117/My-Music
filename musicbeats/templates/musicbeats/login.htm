@@ -4,7 +4,7 @@
 {% block body %}
     <h2 class="text-center mt-3">Log-In</h2>
     <div class="container my-3">
-    <form action="/musicbeats/login" method="POST">{% csrf_token %}
+    <form action="/musicbeats/login" method="POST"  data-aos="flip-right" data-aos-delay="700">{% csrf_token %}
         <div class="form-group">
           <label for="exampleInputEmail1">Username</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="Your Username">

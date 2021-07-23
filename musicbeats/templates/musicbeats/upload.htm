@@ -3,10 +3,10 @@
 
 {% block body %}
 
-<h2 class="mt-4 text-center" style="  color: rgb(218, 16, 16);">Upload Your Music</h2>
+<h2 class="mt-4 text-center" style="  color: rgb(218, 16, 16);"  data-aos="flip-down" data-aos-delay="600">Upload Your Music</h2>
 
 <div class="container  mt-4">
-    <form action="/musicbeats/upload" enctype="multipart/form-data" method="POST">{% csrf_token %}
+    <form action="/musicbeats/upload" enctype="multipart/form-data" method="POST"  data-aos="flip-up" data-aos-delay="700">{% csrf_token %}
         <div class="form-group">
           <label for="exampleInputEmail1">Your Music Name</label>
           <input type="text" class="form-control" id="exampleInputEmail1"  name="name" placeholder="Your Song Name">
